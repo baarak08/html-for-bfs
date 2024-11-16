@@ -29,13 +29,13 @@ body {
 }
 
 .header-image {
-  position: absolute; /* Absolute positioning */
-  top: 22.5vw; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Align center based on image dimensions */
-  z-index: 10; /* Ensure it appears above the video */
-  width: 9.44vw; /* Set your desired image size */
-  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 22.5vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 9.44vw;
+  height: auto;
 }
 
 .main-content {
