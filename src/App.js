@@ -16,9 +16,6 @@ import buttonDownload from './svg/buttonDownload.svg';
 import video from './mp4/StoryVideo.mp4';
 
 
-
-
-
 function App() {
   return (
     <div className="app">
