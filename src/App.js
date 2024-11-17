@@ -1,37 +1,45 @@
 import React from 'react';
 import './App.css';
-import logo from './svg/logo.svg';
 import satu from './svg/1.svg';
 import dua from './svg/2.svg';
 import tiga from './svg/3.svg';
 import empat from './svg/4.svg';
-import laptop from './svg/laptop.svg';
-import baarak from './svg/baarak.svg';
-import rizky from './svg/rizky.svg';
-import farrel from './svg/farrel.svg';
-import nadhirul from './svg/nadhirul.svg';
-import dicky from './svg/dicky.svg';
+import logo from './logo.svg'
+import laptop from './svg/mac.svg';
+import baarak from './svg/bar.svg';
+import rizky from './svg/ki.svg';
+import farrel from './svg/rel.svg';
+import nadhirul from './svg/nad.svg';
+import dicky from './svg/dik.svg';
+import buttonDownload from './svg/available.svg';
 import hp from './svg/hp.svg';
-import buttonDownload from './svg/buttonDownload.svg';
 import video from './mp4/StoryVideo.mp4';
+import videodemo from './svg/gameplay.svg';
+import videodemoBg from './svg/bg.svg';
+import Navbar from './Navbar';
 
 
 function App() {
   return (
     <div className="app">
+      
+      {/* Navigation Bar */}
+      <Navbar/>
+
       {/* Header Section */}
       <header className="header">
         <video className="header-video" autoPlay loop muted playsInline>
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
-        <img src={logo} alt="Overlay" className="header-image" />
+        {/* <img src={logo} alt="Overlay" className="header-image" /> */}
       </header>
 
       {/* Main Content */}
       <main className="main-content">
         {/* Game Description */}
-        <section className="description">
+        <section id="description" className="description">
+        <div style={{ height: '60px', marginTop: '-60px' }} id="how-to-play-offset"></div>
           <h1>Bender Force Saga</h1>
           <h2>Arcade experience at home.</h2>
           <p>
@@ -47,14 +55,14 @@ function App() {
         <div className="spacer"></div>
 
         {/* Features Section */}
-        <section className="features">
+        <section id="features" className="features">
+        <div style={{ height: '80px', marginTop: '-80px' }} id="how-to-play-offset"></div>
           <h2>Expensive Experience For Free!</h2>
           <div className="feature">
           <div className='featureContent'>
           <h1>Play with Seamless Controller</h1>
           <p>
-              Journey through lush landscapes and ancient battlegrounds as you join forces with friends to repel the invaders.
-            </p>
+          Turn your iPhone into a game controller and experience effortless interaction. Perform physical actions to trigger in-game mechanics, all without tapping the screen.            </p>
             </div>
             <img src={laptop} alt="Feature 1" />
           </div>
@@ -63,8 +71,7 @@ function App() {
             <div className='featureContent'>
             <h1>Immersive-Interactive Games</h1>
             <p>
-            Journey through lush landscapes and ancient battlegrounds as you join forces with friends to repel the invaders.            
-            </p>
+            Feel the thrill of becoming a true elemental hero. Your physical movements control attacks, defenses, and abilities, mirroring the actions of the Kodos in battle. Dive into the world of Kodonia where every gesture connects you to the game like never before.            </p>
             </div>
           </div>
         </section>
@@ -72,7 +79,8 @@ function App() {
         <div className="spacer"></div>
 
         {/* How to Play Section */}
-        <section className="how-to-play">
+        <section id="how-to-play" className="how-to-play">
+        <div style={{ height: '320px', marginTop: '-320px' }} id="how-to-play-offset"></div>
           <h2>How to Play</h2>
           <p>
           Follow these 4 steps to play Bender Force Saga easily with your friends!            
@@ -94,7 +102,6 @@ function App() {
           </div>
           </div>    
 
-
           <div className="duadanempat">
           <div className="numbers">
           <img src={dua}/>
@@ -114,9 +121,44 @@ function App() {
         </section>
 
         <div className="spacer"></div>
+        
+      </main>
+
+        {/* Video Demo Section */}
+        <section id='videodemos' className="videodemos">
+        <div style={{ height: '320px', marginTop: '-320px' }} id="how-to-play-offset"></div>
+          <div className="videodemo">
+            <a
+            className="App-link"
+            href="https://youtu.be/D8se5_odq2Y?si=aOrNm4hwGjE3-xdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <img src={videodemo} alt="videodemo" />
+            </a>
+            <div className='videodemoContent'>
+              <h2>Bender Force Saga Demo</h2>
+              <p>
+              In this exclusive demo, see how Bender Force Saga lets you control the game with physical gestures using your iPhone as the controller.            
+              </p>
+              {/* <img src={buttonvideodemo} alt="buttonVideoDemo" className="buttonVideoDemo" /> */}
+            </div>
+          </div>
+          <img src={videodemoBg} alt="videodemoBackground" className='videodemoBackground'/>
+          </section>
+          <div className="spacer"></div>
+
+
+
+
+      {/* Main Content */}
+      <main className="main-content">
+      <div className="spacer"></div>
+
 
         {/* About Section */}
-        <section className="about">
+        <section id="about" className="about">
+        <div style={{ height: '300px', marginTop: '-300px' }} id="how-to-play-offset"></div>
           <h2>About This Game</h2>
           <p>Bender Force Saga is developed by Motio Studio, a small team from Indonesia in Apple Developer Academy @IL 2024.</p>
           <div className="numbers">
@@ -132,10 +174,11 @@ function App() {
         <div className="spacer"></div>
 
         {/* Available Now Section */}
-        <section className="available-now">
+        <section id="available-now" className="available-now">
+        <div style={{ height: '320px', marginTop: '-320px' }} id="how-to-play-offset"></div>
           <h2>Available Now!</h2>
           <p>
-          Journey through lush landscapes and ancient battlegrounds as you join forces with friends to repel the invaders, protect Kodonia’s delicate balance, and safeguard the elemental forces that bind their world. In Bender Force Saga, the fate of Kodonia rests in your hands—do you have the strength to protect its legacy?          </p>
+          The wait is over—Bender Force Saga is here! Dive into an epic adventure where your movements control the action. With groundbreaking gameplay that turns your iPhone into a seamless controller, experience the thrill of unleashing elemental powers and defending Kodonia like never before. Don't just play—become the hero. Download now on the App Store and join the fight to restore harmony in this one-of-a-kind immersive game. Kodonia needs you!          </p>
           <div className="store-buttons">
           <a
           className="App-link"
