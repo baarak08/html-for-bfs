@@ -31,7 +31,12 @@ const Navbar = () => {
         <a href="#available-now">Available Now</a>
       </div>
       <div className="navbar-icons">
-        <img src={insta} alt="Line" className="navbarImageInsta"/>
+        <button
+          className="buttonInsta"
+          onClick={() => window.open('https://www.instagram.com/motiostudios/?utm_source=ig_web_button_share_sheet', '_blank')}
+          >
+          <img src={insta} alt="Line" className="navbarImageInsta"/>
+        </button>
         <img src={line} alt="Line" className="navbarImageLine"/>
         <img src={logo} alt="Line" className="navbarImageLogo"/>
 

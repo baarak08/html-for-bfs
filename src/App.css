@@ -43,9 +43,9 @@ html {
   transition: background-color 0.3s;
 }
 
-.navbar-icons {
-  display: flex;
-  flex-shrink: 0;
+.navbar-icons img {
+  padding-top: 3px;
+  align-content: center;
 }
 
 
@@ -59,6 +59,14 @@ html {
 .navbarImageInsta {
   width: 2.41vw;
   height: 2.41vw;
+}
+
+.buttonInsta{
+  margin: 0;
+  background: none;
+  border: none;
+  background-color: #000;
+  cursor: pointer;
 }
 
 .navbarImageLine {
@@ -590,16 +598,6 @@ align-items: flex-start;
   height: 27.39vw;
 }
 
-.buttonVideoDemo {
-  width: 18.18vw;
-  height: 3.49vw;
-  margin: 0;
-  float: left; 
-  display: block; 
-  text-align: left;
-}
-
-
 @media (max-width: 1500px) {
   .videodemos {
     padding-bottom: 25vw;
@@ -676,6 +674,11 @@ align-items: flex-start;
 }
 
 .buttonVideoDemo {
+  width: 18.18vw;
+  height: 3.49vw;
+  margin: 0;
+  float: left; 
+  display: block; 
   background-color: #A2EB5E;
   color: black;
   border: none;
@@ -684,7 +687,6 @@ align-items: flex-start;
   font-size: auto;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin: 0;
 }
 
 .buttonVideoDemo:hover {

@@ -39,7 +39,7 @@ function App() {
       <main className="main-content">
         {/* Game Description */}
         <section id="description" className="description">
-        <div style={{ height: '60px', marginTop: '-60px' }} id="how-to-play-offset"></div>
+        <div style={{ height: '60px', marginTop: '-60px' }} id="description-offset"></div>
           <h1>Bender Force Saga</h1>
           <h2>Arcade experience at home.</h2>
           <p>
@@ -56,7 +56,7 @@ function App() {
 
         {/* Features Section */}
         <section id="features" className="features">
-        <div style={{ height: '80px', marginTop: '-80px' }} id="how-to-play-offset"></div>
+        <div style={{ height: '80px', marginTop: '-80px' }} id="features-offset"></div>
           <h2>Expensive Experience For Free!</h2>
           <div className="feature">
           <div className='featureContent'>
@@ -126,7 +126,7 @@ function App() {
 
         {/* Video Demo Section */}
         <section id='videodemos' className="videodemos">
-        <div style={{ height: '320px', marginTop: '-320px' }} id="how-to-play-offset"></div>
+        <div style={{ height: '280px', marginTop: '-280px' }} id="videodemos-offset"></div>
           <div className="videodemo">
             <a
             className="App-link"
@@ -155,16 +155,12 @@ function App() {
           <div className="spacer"></div>
 
 
-
-
       {/* Main Content */}
       <main className="main-content">
       <div className="spacer"></div>
-
-
         {/* About Section */}
         <section id="about" className="about">
-        <div id="how-to-play-offset"></div>
+        <div style={{ height: '320px', marginTop: '-320px' }} id="about-offset"></div>
           <h2>About This Game</h2>
           <p>Bender Force Saga is developed by Motio Studio, a small team from Indonesia in Apple Developer Academy @IL 2024.</p>
           <div className="numbers">
@@ -181,7 +177,7 @@ function App() {
 
         {/* Available Now Section */}
         <section id="available-now" className="available-now">
-        <div style={{ height: '320px', marginTop: '-320px' }} id="how-to-play-offset"></div>
+        <div style={{ height: '320px', marginTop: '-320px' }} id="available-now-offset"></div>
           <h2>Available Now!</h2>
           <p>
           The wait is over—Bender Force Saga is here! Dive into an epic adventure where your movements control the action. With groundbreaking gameplay that turns your iPhone into a seamless controller, experience the thrill of unleashing elemental powers and defending Kodonia like never before. Don't just play—become the hero. Download now on the App Store and join the fight to restore harmony in this one-of-a-kind immersive game. Kodonia needs you!          </p>
@@ -222,7 +218,12 @@ function App() {
             </div>
             
             <div className="footerIcons">
+            <button
+              className="buttonInsta"
+              onClick={() => window.open('https://www.instagram.com/motiostudios/?utm_source=ig_web_button_share_sheet', '_blank')}
+              >
             <img src={insta} alt="Line" className="navbarImageInsta"/>
+            </button>
             <img src={line} alt="Line" className="navbarImageLine"/>
             <img src={logo} alt="Line" className="navbarImageLogo"/>
             </div>
