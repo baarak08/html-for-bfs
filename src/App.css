@@ -465,12 +465,11 @@ width: 3.5vw ;
 }
 
 .store-buttons a:active {
-  color: green;
-
+  color: white;
 }
 
 .store-buttons a:hover {
-  color: white; 
+  color: whitesmoke; 
 
 }
 
@@ -565,11 +564,6 @@ align-items: flex-start;
 
 }
 
-.videodemoView {
-  width: 28.49vw;
-  z-index: 10;
-  border-radius: 6%;
-}
 
 .videodemo h2 {
   font-size: 2.5rem;
@@ -694,10 +688,23 @@ align-items: flex-start;
 }
 
 .buttonVideoDemo:hover {
-  background-color: darkgreen;
+  background-color: green;
+  color: white;
 }
 
 .buttonVideoDemo:active {
-  background-color: lightgreen;
+  background-color: white;
   color: black;
+}
+
+.videodemoView {
+  width: 28.49vw;
+  z-index: 10;
+  border-radius: 10%;
+  border: 2px solid #000000; 
+}
+
+.videodemoView:hover {
+  border-radius: 10%;
+  border: 2px solid #ffff; 
 }
