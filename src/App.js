@@ -4,19 +4,19 @@ import satu from './svg/1.svg';
 import dua from './svg/2.svg';
 import tiga from './svg/3.svg';
 import empat from './svg/4.svg';
-import logo from './logo.svg'
 import laptop from './svg/mac.svg';
-import baarak from './svg/bar.svg';
-import rizky from './svg/ki.svg';
-import farrel from './svg/rel.svg';
-import nadhirul from './svg/nad.svg';
-import dicky from './svg/dik.svg';
-import buttonDownload from './svg/available.svg';
+import baarak from './svg/baarakFoto.svg';
+import rizky from './svg/rizkyFoto.svg';
+import farrel from './svg/farrelFoto.svg';
+import nadhirul from './svg/nadhirulFoto.svg';
+import dicky from './svg/dickyFoto.svg';
 import hp from './svg/hp.svg';
 import video from './mp4/StoryVideo.mp4';
 import videodemo from './svg/gameplay.svg';
 import videodemoBg from './svg/bg.svg';
-import buttonvideodemo from './svg/wacthVideo.svg';
+import insta from './svg/instagram.svg';
+import line from './svg/pembatas.svg';
+import logo from './svg/bfs.svg';
 import Navbar from './Navbar';
 
 
@@ -33,7 +33,6 @@ function App() {
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
-        {/* <img src={logo} alt="Overlay" className="header-image" /> */}
       </header>
 
       {/* Main Content */}
@@ -142,7 +141,13 @@ function App() {
               <p>
               In this exclusive demo, see how Bender Force Saga lets you control the game with physical gestures using your iPhone as the controller.            
               </p>
-              <img src={buttonvideodemo} alt="buttonVideoDemo" className="buttonVideoDemo" />
+              <button
+              className="buttonVideoDemo"
+              onClick={() => window.open('https://youtu.be/D8se5_odq2Y?si=aOrNm4hwGjE3-xdf', '_blank')}
+              >
+              Watch Demo
+              </button>
+
             </div>
           </div>
           <img src={videodemoBg} alt="videodemoBackground" className='videodemoBackground'/>
@@ -159,7 +164,7 @@ function App() {
 
         {/* About Section */}
         <section id="about" className="about">
-        <div style={{ height: '300px', marginTop: '-300px' }} id="how-to-play-offset"></div>
+        <div id="how-to-play-offset"></div>
           <h2>About This Game</h2>
           <p>Bender Force Saga is developed by Motio Studio, a small team from Indonesia in Apple Developer Academy @IL 2024.</p>
           <div className="numbers">
@@ -183,20 +188,49 @@ function App() {
           <div className="store-buttons">
           <a
           className="App-link"
+          href="https://testflight.apple.com/join/CWc8euxS"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          <p>Bender Force Saga (MacOS)</p>
+          </a>
+          <a
+          className="App-link"
           href="https://testflight.apple.com/join/w9jRVJzG"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <img src={buttonDownload}/>
+          >
+          <p>DetAction (iOS)</p>
           </a>
           </div>
         </section>
 
-    
-
         <div className="spacer"></div>
 
       </main>
+
+      <section id="footer" className="footerContainer">
+        <div className="footer">
+            <div className="subFooter">
+            <p>Realeased</p>
+            <h2>2024</h2>
+            </div>
+
+            <div className="subFooter">
+            <p>Developer</p>
+            <h2>Motio Studio</h2>
+            </div>
+            
+            <div className="footerIcons">
+            <img src={insta} alt="Line" className="navbarImageInsta"/>
+            <img src={line} alt="Line" className="navbarImageLine"/>
+            <img src={logo} alt="Line" className="navbarImageLogo"/>
+            </div>
+
+          </div>
+          </section>
+
+        <div className="spacer"></div>
     </div>
   );
 }
