@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import insta from './svg/instagram.svg';
-import line from './svg/pembatas.svg';
+import line from './svg/lineSVG.svg';
 import logo from './svg/bfs.svg';
 
 

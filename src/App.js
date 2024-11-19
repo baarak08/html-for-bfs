@@ -15,7 +15,7 @@ import video from './mp4/StoryVideo.mp4';
 import videodemo from './svg/gameplay.svg';
 import videodemoBg from './svg/bg.svg';
 import insta from './svg/instagram.svg';
-import line from './svg/pembatas.svg';
+import line from './svg/lineSVG.svg';
 import logo from './svg/bfs.svg';
 import Navbar from './Navbar';
 
