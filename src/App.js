@@ -16,6 +16,7 @@ import hp from './svg/hp.svg';
 import video from './mp4/StoryVideo.mp4';
 import videodemo from './svg/gameplay.svg';
 import videodemoBg from './svg/bg.svg';
+import buttonvideodemo from './svg/wacthVideo.svg';
 import Navbar from './Navbar';
 
 
@@ -134,14 +135,14 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             >
-            <img src={videodemo} alt="videodemo" />
+            <img src={videodemo} alt="videodemo" className="videodemoView"/>
             </a>
             <div className='videodemoContent'>
               <h2>Bender Force Saga Demo</h2>
               <p>
               In this exclusive demo, see how Bender Force Saga lets you control the game with physical gestures using your iPhone as the controller.            
               </p>
-              {/* <img src={buttonvideodemo} alt="buttonVideoDemo" className="buttonVideoDemo" /> */}
+              <img src={buttonvideodemo} alt="buttonVideoDemo" className="buttonVideoDemo" />
             </div>
           </div>
           <img src={videodemoBg} alt="videodemoBackground" className='videodemoBackground'/>

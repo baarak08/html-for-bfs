@@ -3,7 +3,6 @@ import './App.css';
 import insta from './svg/instagram.svg';
 import line from './svg/pembatas.svg';
 import logo from './svg/bfs.svg';
-// import logo from './logo.svg'
 
 
 const Navbar = () => {
